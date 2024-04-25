@@ -1,17 +1,32 @@
 <div class="table-of-contents">
   <div class="toc-item green-accent">
-    <h2 class="toc-header">Data</h2>
-    <p class="toc-text"></p>
-    <button class="toc-btn">Interact</button>
+    <h2 class="toc-header">Building Data</h2>
+    <p class="toc-text">
+      Gathered, cleaned, and preprocessed historical NHL game data using Python
+      and SQL to extract relevant features for model training.
+    </p>
+    <button class="toc-btn" (click)="scrollToElement('data')">
+      Sources + Interact
+    </button>
   </div>
   <div class="toc-item orange-accent">
-    <h2 class="toc-header">Models</h2>
-    <p class="toc-text"></p>
-    <button class="toc-btn">View More</button>
+    <h2 class="toc-header">Modeling</h2>
+    <p class="toc-text">
+      Implemented various machine learning algorithms including regression,
+      classification, and ensemble methods to predict game outcomes.
+    </p>
+    <button class="toc-btn" (click)="scrollToElement('models')">
+      Details + Findings
+    </button>
   </div>
   <div class="toc-item red-accent">
-    <h2 class="toc-header">About</h2>
-    <p class="toc-text"></p>
-    <button class="toc-btn">Details</button>
+    <h2 class="toc-header">Further Info</h2>
+    <p class="toc-text">
+      Continuing to introduce new variables and experiment with a variety of
+      modeling techniques. Also, a bit of info about this project's creator.
+    </p>
+    <button class="toc-btn" (click)="scrollToElement('further-info')">
+      More Ideas + About Me
+    </button>
   </div>
 </div>

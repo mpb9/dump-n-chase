@@ -4,9 +4,31 @@
   align-items: center;
   justify-content: flex-start;
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: var(--dark);
 }
 
 app-table-of-contents {
   width: 100%;
+}
+app-intro {
+  width: 100%;
+  z-index: 1;
+  background-color: inherit;
+}
+app-data {
+  width: 100%;
+  z-index: 1;
+  background-color: inherit;
+}
+
+app-models {
+  width: 100%;
+  z-index: 1;
+  background-color: inherit;
+}
+
+app-further-info {
+  width: 100%;
+  z-index: 1;
+  background-color: inherit;
 }
