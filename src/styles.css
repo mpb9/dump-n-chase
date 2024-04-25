@@ -1,18 +1,8 @@
 @import "../node_modules/picnic/picnic.min.css";
-
-:root {
-  --primary: #0074d9;
-  --secondary: #7f8c8d;
-  --success: #12f1d6;
-  --warning: #ec3358;
-  --danger: #e74c3c;
-  --info: #3498db;
-  --light: #ecf0f1;
-  --dark: #2c3e50;
-}
-
+@import "./app/styles/colors.config.css";
+@import "./app/styles/buttons.config.css";
 body {
-  background-color: #363636;
+  background-color: var(--dark);
   font-size: 16px;
 }
 
