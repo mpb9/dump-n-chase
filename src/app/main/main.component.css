@@ -15,19 +15,19 @@ app-intro {
   z-index: 1;
   background-color: inherit;
 }
-app-data {
+app-process {
   width: 100%;
   z-index: 1;
   background-color: inherit;
 }
 
-app-models {
+app-results {
   width: 100%;
   z-index: 1;
   background-color: inherit;
 }
 
-app-further-info {
+app-explore {
   width: 100%;
   z-index: 1;
   background-color: inherit;

@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { DataComponent } from '../data/data.component';
-import { AboutMeComponent } from '../further-info/about-me/about-me.component';
-import { FurtherInfoComponent } from '../further-info/further-info.component';
-import { IntroComponent } from '../intro/intro.component';
-import { ModelsComponent } from '../models/models.component';
+import { ExploreComponent } from '../explore/explore.component';
+import { IntroComponent } from '../process/intro/intro.component';
+import { ProcessComponent } from '../process/process.component';
+import { ResultsComponent } from '../results/results.component';
 import { TableOfContentsComponent } from '../table-of-contents/table-of-contents.component';
 
 @Component({
@@ -13,11 +12,10 @@ import { TableOfContentsComponent } from '../table-of-contents/table-of-contents
   styleUrl: './main.component.css',
   imports: [
     TableOfContentsComponent,
-    AboutMeComponent,
-    DataComponent,
-    FurtherInfoComponent,
-    ModelsComponent,
     IntroComponent,
+    ExploreComponent,
+    ProcessComponent,
+    ResultsComponent,
   ],
 })
 export class MainComponent {}
