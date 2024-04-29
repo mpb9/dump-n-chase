@@ -1,0 +1,9 @@
+button {
+  border-radius: 0.2em;
+  background-color: var(--secondary);
+  color: white;
+}
+
+button:hover {
+  color: var(--dark);
+}

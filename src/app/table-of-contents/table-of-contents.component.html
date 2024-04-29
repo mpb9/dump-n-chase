@@ -1,1 +1,32 @@
-<div class="table-of-contents"></div>
+<div class="table-of-contents">
+  <div class="toc-item green-accent">
+    <h2 class="toc-header">Process</h2>
+    <p class="toc-text">
+      Gathered, cleaned, and preprocessed historical NHL game data using Python
+      and SQL to extract relevant features for model training.
+    </p>
+    <button class="toc-btn" (click)="scrollToElement('process')">
+      Data + Models
+    </button>
+  </div>
+  <div class="toc-item orange-accent">
+    <h2 class="toc-header">Results</h2>
+    <p class="toc-text">
+      Implemented various machine learning algorithms including regression,
+      classification, and ensemble methods to predict game outcomes.
+    </p>
+    <button class="toc-btn" (click)="scrollToElement('results')">
+      Details + Analysis
+    </button>
+  </div>
+  <div class="toc-item red-accent">
+    <h2 class="toc-header">Explore</h2>
+    <p class="toc-text">
+      Interact with datasets through querying, sorting, and searching. Links to
+      codebase, Jupyter notebooks, and raw data sources. Info about the author.
+    </p>
+    <button class="toc-btn" (click)="scrollToElement('explore')">
+      Examine + About Me
+    </button>
+  </div>
+</div>

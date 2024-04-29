@@ -39,6 +39,15 @@
     background-position: 0% 50%;
   }
 }
+@-webkit-keyframes header-background {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 .header .header-title {
   animation: title-background 4s ease-in 1s infinite alternate backwards;
@@ -55,21 +64,21 @@
     linear,
     left top,
     right top,
-    from(var(--success)),
-    color-stop(var(--success)),
-    color-stop(var(--warning)),
-    color-stop(var(--warning)),
-    color-stop(var(--success)),
-    to(var(--success))
+    from(var(--blue)),
+    color-stop(var(--blue)),
+    color-stop(var(--red)),
+    color-stop(var(--red)),
+    color-stop(var(--blue)),
+    to(var(--blue))
   );
   background-image: linear-gradient(
     90deg,
-    var(--success),
-    var(--success),
-    var(--warning),
-    var(--warning),
-    var(--success),
-    var(--success)
+    var(--blue),
+    var(--blue),
+    var(--red),
+    var(--red),
+    var(--blue),
+    var(--blue)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -78,6 +87,15 @@
   z-index: 1;
 }
 @keyframes title-background {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes title-background {
   0% {
     background-position: 100% 50%;
   }
