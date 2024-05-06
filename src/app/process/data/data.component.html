@@ -115,21 +115,7 @@
         "
       />
     </div>
-  </div>
-  <h1>Step 3: Create custom dependent variables</h1>
-  <div class="sub-section">
-    <div class="media" style="width: 100%">
-      <img
-        src="../../../assets/media/per-game-by-team-snippet.jpeg"
-        alt="Per game by team snippet"
-        style="
-          width: 100%;
-          box-shadow: 0 0 6px 1px var(--blue);
-          border-radius: 3px;
-        "
-      />
-    </div>
-    <div class="desc-1">
+    <div class="desc-1" style="margin: 1em 0em">
       <p>
         Having cleaned and recontextualized the data for each team's game
         statistics, my dataset included 117 features for each team's performance
@@ -141,8 +127,72 @@
         <a href="https://moneypuck.com/glossary.htm" target="_blank">here</a>.
       </p>
     </div>
+    <div class="media" style="width: 100%">
+      <img
+        src="../../../assets/media/per-game-by-team-snippet.jpeg"
+        alt="Per game by team snippet"
+        style="
+          width: 100%;
+          box-shadow: 0 0 6px 1px var(--blue);
+          border-radius: 3px;
+        "
+      />
+    </div>
   </div>
+  <h1>Step 3: Create custom dependent variables</h1>
   <div class="sub-section">
-    WRITE ABOUT ROLLING AVGS, TRAGECTORY, POWER RANKS
+    <div class="desc-2" style="width: 30%; margin: 0px 0vw 0px 8vw">
+      <h3 class="text-shadow-green">Rolling Averages</h3>
+      <p>
+        In addition to using the stats from the previous game to determine
+        implied profit, I transformed the data to account for each team's
+        averages in each numerical stat over previous X games.
+      </p>
+      <h3 class="text-shadow-green">Rolling Tragectory</h3>
+      <p>
+        Using rolling averages, I calculated the difference between each team's
+        performance in a given stat in the previous X games and the average of
+        that stat over the previous (larger) Y games.
+      </p>
+    </div>
+    <div class="media" style="width: 50%; margin: 2em 4vw">
+      <img
+        src="../../../assets/media/rolling-8.jpg"
+        alt="Rolling averages"
+        style="
+          width: 100%;
+          box-shadow: 0 0 6px 1px var(--green);
+          border-radius: 3px;
+        "
+      />
+    </div>
+    <div class="media" style="width: 55%; margin: 0px 2vw">
+      <img
+        src="../../../assets/media/car-bos-powerranks-2022.png"
+        alt="Rolling averages"
+        style="
+          width: 100%;
+          box-shadow: 0 0 6px 1px var(--yellow);
+          border-radius: 3px;
+        "
+      />
+    </div>
+    <div class="desc-2" style="width: 25%; margin: 0px 4vw">
+      <h3 class="text-shadow-green">Power Rankings</h3>
+      <p>
+        Each team's average odds vs. every other team. Initially calculates
+        average odds across all games against each particular opponent, sums
+        those calculated averages, and divides by number of opponents faced over
+        the given sample's timespan.
+      </p>
+    </div>
+    <div class="desc-1" style="margin: 1em 0em; font-style: italic">
+      Read about additional custom variables
+      <a
+        href="https://github.com/mpb9/nhl-model/blob/master/README.md"
+        target="_blank"
+        >here</a
+      >.
+    </div>
   </div>
 </div>
