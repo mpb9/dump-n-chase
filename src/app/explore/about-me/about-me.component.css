@@ -1,0 +1,31 @@
+.my-card {
+  width: 275px;
+  margin: 0px 20px;
+}
+.my-card > h2 {
+  color: white;
+  background-color: #38434f;
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 0.2em 0.5em;
+}
+.my-site > h2:hover {
+  color: #83dca8;
+  background-color: #9470dc;
+}
+.my-site > h2 > a:hover {
+  color: #bbffd7 !important;
+}
+.my-card-content {
+  height: 215px;
+  width: inherit;
+  background-color: #9470dc;
+  padding: 0em 0.75em;
+  border-radius: 8px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}

@@ -2,6 +2,7 @@
 @import "./styles/colors.config.css";
 @import "./styles/buttons.config.css";
 @import "./styles/scrollbar.config.css";
+@import "./styles/shadows.config.css";
 
 body {
   background-color: var(--dark);
@@ -28,6 +29,7 @@ span {
   cursor: default;
   padding: 1em 10vw 0.25em 10vw;
   width: 100%;
+  align-content: flex-start;
   text-align: center;
 }
 .sub-section {

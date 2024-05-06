@@ -1,10 +1,18 @@
 <div class="section bg-rb">
-  <h1>Gather, clean, and recontextualize data</h1>
-  <div class="sub-section">
-    <div class="media" style="width: 30%; margin-left: 14%">
-      <img src="../../../assets/media/oddsportal.jpeg" alt="Odds Portal" />
+  <h1>Step 1: Gather, clean, and recontextualize data</h1>
+  <div class="sub-section" style="margin-top: 1em">
+    <div class="media" style="width: 35%; margin-left: 12%">
+      <img
+        src="../../../assets/media/oddsportal.jpeg"
+        alt="Odds Portal"
+        style="
+          width: 100%;
+          box-shadow: 0 0 6px 1px var(--blue);
+          border-radius: 3px;
+        "
+      />
     </div>
-    <div class="desc-2" style="width: 40%">
+    <div class="desc-2" style="width: 40%; margin-left: 2%">
       <p>
         Raw data used in this project was gathered from a variety of sources,
         including
@@ -13,9 +21,12 @@
         >
         and
         <a href="https://moneypuck.com/index.html" target="_blank">MoneyPuck</a
-        >, via web scraping and CSV files. Data was cleaned and recontextualized
-        to fit the needs of the project. This included parsing data into
-        readable columns, converting data types, and merging tables.
+        >, via web scraping and CSV files.
+      </p>
+      <p>
+        Data was cleaned and recontextualized to fit the needs of the project.
+        This included parsing data into readable columns, converting data types,
+        and merging tables.
       </p>
     </div>
     <div class="desc-1" style="padding-top: 2em">
@@ -24,7 +35,8 @@
         <a href="https://www.oddsportal.com/hockey/usa/nhl/" target="_blank"
           >OddsPortal</a
         >
-        representing each game were transformed into .csv files:
+        representing each game were transformed into .csv files where each row
+        corresponded to a team's performance in a game:
       </p>
       <div
         style="
@@ -63,5 +75,74 @@
       </div>
     </div>
   </div>
-  <div class="sub-section"></div>
+  <div class="sub-section" style="margin-top: 2em">
+    <div class="desc-1">
+      At of May 2024, the data used in this project includes all regular season
+      games from the 2014-2015 season to the 2022-2023 season.
+      <div class="media" style="margin-top: 0.75em">
+        <img
+          src="../../../assets/media/gpg-by-season.jpg"
+          alt="Goals per game by season"
+          style="
+            width: 100%;
+            box-shadow: 0 0 6px 1px var(--red);
+            border-radius: 3px;
+          "
+        />
+      </div>
+    </div>
+  </div>
+  <h1>Step 2: Identify the target independent variable(s)</h1>
+  <div class="sub-section">
+    <div class="desc-1">
+      <p>
+        Every NHL game has
+        <i class="text-shadow-purple">three-way moneyline odds</i>, meaning the
+        odds of each team winning, losing, or tying the game at the end of
+        regulation time. Instead of predicting the implied chance of each
+        occurance, it was more accurate to predict the
+        <i class="text-shadow-purple"> implied profit percentage:</i>
+      </p>
+    </div>
+    <div class="media">
+      <img
+        src="../../../assets/media/profit-by-team.jpg"
+        alt="Profit by team"
+        style="
+          width: 100%;
+          box-shadow: 0 0 6px 1px var(--orange);
+          border-radius: 3px;
+        "
+      />
+    </div>
+  </div>
+  <h1>Step 3: Create custom dependent variables</h1>
+  <div class="sub-section">
+    <div class="media" style="width: 100%">
+      <img
+        src="../../../assets/media/per-game-by-team-snippet.jpeg"
+        alt="Per game by team snippet"
+        style="
+          width: 100%;
+          box-shadow: 0 0 6px 1px var(--blue);
+          border-radius: 3px;
+        "
+      />
+    </div>
+    <div class="desc-1">
+      <p>
+        Having cleaned and recontextualized the data for each team's game
+        statistics, my dataset included 117 features for each team's performance
+        in a game. You can download a sample of the baseline data for the
+        2022-23 season
+        <a href="../../../assets/data/PER_GAME_BY_TEAM_5on5_2022.csv" download
+          >here</a
+        >. More info on variables can be found
+        <a href="https://moneypuck.com/glossary.htm" target="_blank">here</a>.
+      </p>
+    </div>
+  </div>
+  <div class="sub-section">
+    WRITE ABOUT ROLLING AVGS, TRAGECTORY, POWER RANKS
+  </div>
 </div>
